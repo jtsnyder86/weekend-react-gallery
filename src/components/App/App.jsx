@@ -19,7 +19,9 @@ function App() {
       }).catch(err => {
         console.log(err);
       })
-  }
+  };
+
+  
 
   useEffect( () => {
     getGallery()
@@ -33,6 +35,7 @@ function App() {
         </header>
         <p>Gallery goes here</p>
         <img src="images/goat_small.jpg"/>
+        <GalleryList galleryList={galleryList}/>
         <GalleryItem />
       </div>
     );

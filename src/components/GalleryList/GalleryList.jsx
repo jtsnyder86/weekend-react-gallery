@@ -1,9 +1,19 @@
+import GalleryItem from "../GalleryItem/GalleryItem"
 
 
-function GalleryList() {
+function GalleryList({galleryList}) {
 
     return (
-        <h1>gone with the wind</h1>
+        
+        galleryList.map(image => {
+            return (
+                <GalleryItem 
+                key={image.id} 
+                image={image.path} 
+                description={image.description}
+                likes={image.likes}/>
+            )
+        })
     )
 }
 

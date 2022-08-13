@@ -1,9 +1,12 @@
 
 
-function GalleryItem() {
+function GalleryItem({image}) {
 
     return (
-        <h1>An image</h1>
+        <div>
+
+
+        </div>
     );
 }
 
