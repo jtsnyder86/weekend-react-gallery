@@ -1,11 +1,20 @@
+import {useState} from 'react';
+import './GalleryItem.css'
 
+function GalleryItem({image, likeButton}) {
 
-function GalleryItem({image}) {
+    const [descriptionStatus, setDescriptionStatus] = useState(false);
 
     return (
-        <div>
-            <p></p>
+        <>
+        <div onClick={() => setDescriptionStatus(!descriptionStatus)}>
+            {descriptionStatus === true ? <p>{image.description}</p>:<img src={image.path} />}
+            
+                       
         </div>
+        <button onClick={() => likeButton(image)}>Like!</button>
+        <p>Likes:{image.likes}</p> 
+        </>
     );
 }
 
