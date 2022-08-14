@@ -1,4 +1,40 @@
 img{
     height: 200px;
+    /* width: 200px; */
 }
 
+main {
+    width: 90%;
+    margin: auto;
+  }
+  
+  .imageDisplay {
+    height: 300px;
+    width: fit-content;
+    border: 1px solid black;
+    display: inline block;
+    margin: 6px;
+    /* display:flex; flex-direction:row; */
+    border-radius: 5px;
+    padding: 10px;
+  }
+  p {
+    text-align: center;
+  }
+  
+  /* .displayLikes {
+    height: 50px;
+    width: 200px;
+    border: 1px solid black;
+    display: inline block;
+    margin: 6px;
+    background-color: rgb(114, 222, 114);
+    border-radius: 5px;
+    padding: 10px;
+  } */
+  
+  /* #flexBox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  } */
