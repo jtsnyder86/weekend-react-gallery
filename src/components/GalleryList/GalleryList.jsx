@@ -4,7 +4,7 @@ import GalleryItem from "../GalleryItem/GalleryItem"
 
 function GalleryList({ galleryList, getGallery }) {
 
-    const likeButton = (image, event) => {
+    const likeButton = (event, image) => {
         event.stopImmediatePropagation();
 
         axios.put(`/gallery/like/${image.id}`)

@@ -10,7 +10,7 @@ function GalleryItem({image, likeButton}) {
         <div className="imageDisplay" onClick={() => setDescriptionStatus(!descriptionStatus)}>
             {descriptionStatus === true ? <p>{image.description}</p>:<img src={image.path} />}
             <br />
-            <button onClick={() => likeButton(image, event)}>Like!</button>
+            <button onClick={() => likeButton(event, image)}>Like!</button>
             <p>Likes:{image.likes}</p>
         </div>
         

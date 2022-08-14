@@ -1,6 +1,12 @@
 img{
     height: 200px;
     /* width: 200px; */
+    border: 1px solid black;
+    display: inline block;
+    margin: 6px;
+    /* display:flex; flex-direction:row; */
+    border-radius: 5px;
+    padding: 10px;
 }
 
 main {
@@ -11,12 +17,6 @@ main {
   .imageDisplay {
     height: 300px;
     width: fit-content;
-    border: 1px solid black;
-    display: inline block;
-    margin: 6px;
-    /* display:flex; flex-direction:row; */
-    border-radius: 5px;
-    padding: 10px;
   }
   p {
     text-align: center;
